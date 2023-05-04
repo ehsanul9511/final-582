@@ -1,0 +1,60 @@
+% start with a sample article template
+
+\documentclass[12pt]{article}
+
+% packages
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{mathtools}
+\usepackage{multicol}
+\usepackage{lipsum}
+
+% margins
+\usepackage[margin=1in]{geometry}
+
+% spacing
+\usepackage{setspace}
+\setstretch{1.1}
+
+% theorems
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+% commands
+\newcommand{\R}{\mathbb{R}}
+
+% colors
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+
+% listings
+\lstset{
+  basicstyle=\ttfamily,
+  mathescape,
+  escapeinside=||,
+  emphstyle={\color{blue}},
+  keywordstyle=\color{blue},
+  stringstyle=\color{codegreen},
+  commentstyle=\color{codegray},
+  morecomment=[l][\color{magenta}]{\#}
+}
+
+% title
+\title{Title}
+\author{Author}
+\date{\today}
+
+% start of document
+\begin{document}
+\lipsum[1-2]
+\begin{multicols}{2}
+\lipsum[1-2]
+\end{multicols}
+\lipsum[1-2]
+\end{document}
