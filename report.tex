@@ -1,60 +1,371 @@
-% start with a sample article template
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Example: Project Report
+%
+% Source: http://www.howtotex.com
+%
+% Feel free to distribute this example, but please keep the referral
+% to howtotex.com
+% Date: March 2011 
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% How to use writeLaTeX: 
+%
+% You edit the source code here on the left, and the preview on the
+% right shows you the result within a few seconds.
+%
+% Bookmark this page and share the URL with your co-authors. They can
+% edit at the same time!
+%
+% You can upload figures, bibliographies, custom classes and
+% styles using the files menu.
+%
+% If you're new to LaTeX, the wikibook is a great place to start:
+% http://en.wikibooks.org/wiki/LaTeX
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Edit the title below to update the display in My Documents
+%\title{Project Report}
+%
+%%% Preamble
+\documentclass[paper=a4, fontsize=11pt]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage{fourier}
+\usepackage{natbib}
+\usepackage[english]{babel}															% English language/hyphenation
+\usepackage[protrusion=true,expansion=true]{microtype}	
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage[pdftex]{graphicx}	
+\usepackage{url}
+\usepackage{multirow}
+\usepackage{array}
 
-\documentclass[12pt]{article}
+%%% Custom sectioning
+\usepackage{sectsty}
+\allsectionsfont{\centering \normalfont\scshape}
 
-% packages
-\usepackage{amsmath,amssymb,amsthm}
-\usepackage{graphicx}
-\usepackage{hyperref}
-\usepackage{color}
-\usepackage{enumerate}
-\usepackage{enumitem}
-\usepackage{float}
-\usepackage{listings}
-\usepackage{mathtools}
-\usepackage{multicol}
-\usepackage{lipsum}
 
-% margins
-\usepackage[margin=1in]{geometry}
+%%% Custom headers/footers (fancyhdr package)
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead{}											% No page header
+\fancyfoot[L]{}											% Empty 
+\fancyfoot[C]{}											% Empty
+\fancyfoot[R]{\thepage}									% Pagenumbering
+\renewcommand{\headrulewidth}{0pt}			% Remove header underlines
+\renewcommand{\footrulewidth}{0pt}				% Remove footer underlines
+\setlength{\headheight}{13.6pt}
 
-% spacing
-\usepackage{setspace}
-\setstretch{1.1}
 
-% theorems
-\theoremstyle{definition}
-\newtheorem{definition}{Definition}[section]
+%%% Equation and float numbering
+\numberwithin{equation}{section}		% Equationnumbering: section.eq#
+\numberwithin{figure}{section}			% Figurenumbering: section.fig#
+\numberwithin{table}{section}				% Tablenumbering: section.tab#
 
-% commands
-\newcommand{\R}{\mathbb{R}}
 
-% colors
-\definecolor{codegreen}{rgb}{0,0.6,0}
-\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+%%% Maketitle metadata
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} 	% Horizontal rule
 
-% listings
-\lstset{
-  basicstyle=\ttfamily,
-  mathescape,
-  escapeinside=||,
-  emphstyle={\color{blue}},
-  keywordstyle=\color{blue},
-  stringstyle=\color{codegreen},
-  commentstyle=\color{codegray},
-  morecomment=[l][\color{magenta}]{\#}
+\title{
+		%\vspace{-1in} 	
+		\usefont{OT1}{bch}{b}{n}
+		\normalfont \normalsize \textsc{CSE 582 Final Project Report} \\ [25pt]
+		\horrule{0.5pt} \\[0.4cm]
+		\huge Generating Targeted Novelty Questions with AskMeAnything QA Session Data \\
+		\horrule{2pt} \\[0.5cm]
 }
+\author{
+		\normalfont 								\normalsize
+        Ehsanul Kabir\\[-3pt]		\normalsize
+        \today
+}
+\date{}
 
-% title
-\title{Title}
-\author{Author}
-\date{\today}
 
-% start of document
+%%% Begin document
 \begin{document}
-\lipsum[1-2]
-\begin{multicols}{2}
-\lipsum[1-2]
-\end{multicols}
-\lipsum[1-2]
+\maketitle
+\section{Introduction}
+Automatic question generation is an important task in natural language processing. 
+It has many applications in education, information retrieval, and question answering. 
+In this project, I focus on generating targeted questions on a given topic and context on the questionee that is not covered in the context or not common knowledge about the questionee.
+These specific type of questions I refer to as novelty questions.
+I use IAmA subreddit's AskMeAnything (AMA) sessions as the source of context and questions.
+I train a T5 seq2seq model on the AMA data to generate novelty questions.
+I also finetune a BERT model on the AMA data to rank generated questions based on their context relevance.
+The latter is used to filter out questions that are not relevant to the context.
+I evaluate the generated questions on metrics such as BLEU, ROUGE, and METEOR and a human evaluation.
+
+\section{Data Collection and Preprocessing}
+% create a new table
+\begin{table}
+\centering
+\scriptsize
+\begin{tabular}{lm{2.5cm}m{2.5cm}m{2.5cm}m{2.5cm}}
+  \hline
+   & \multicolumn{4}{c}{\textbf{IAmA Subreddit Original Post Titles}} \\
+  \cline{2-5}
+   & I am  \textbf{Jason Steele}, creator of Charlie the Unicorn, Llamas with Hats, and other internet videos. Ask me anything! & I'm a retired  \textbf{bank robber}. AMA! & I’m  \textbf{Lynda Carter}, Wonder Woman actress and singer. Ask Me Anything! & Sup muthafuckas!  \textbf{Ron Perlman} here. Don’t be shy- Ask Me Anything! \\
+   \cline{2-5}
+   \cline{2-5}
+    & What caused you to take the Llamas with Hats series in the direction that you did, from hilariously morbid to actually somewhat sad? & You say that you're retired. But I know a guy who is looking to put together a crew for a major job. This is the one you've been dreaming of all these years. Are you up for one last job? & Hello! Thanks for doing this AMA. Were you ever asked to reprise your role as Wonder Woman for another show, even a cameo? & Why doesn't anybody ever bring up how fucking great City of Lost Children was? \\
+   \cline{2-5}
+   \textbf{Comments} & Hi there! What was your inspiration for Charlie the Unicorn? & How many pounds of shit, would you say, were in your pants while walking out the door? & Thank you for doing this AMA. I just wanted to know, how did it feel, starring on modern superhero shows like Smallville and Supergirl, as opposed to the Wonder Woman show of the 70's? & Now that photos have been released, how do you feel about the 'new' Hellboy? \\
+    \cline{2-5}
+   & How does it feel having created some of the most memorable animations on the Internet?  & "Why, is that mister Clay coming in with the gun? Well, goshdarnit, is it thursday already?" & Hi Lynda! Thanks for doing this AMA! How did you like working on Fallout 4? Magnolia was such a great character! & Who would you want to play you in a Sons of Anarchy prequel? \\
+  \hline
+  \hline
+  \end{tabular}
+  \caption{Sample of AMA context and questions}
+  \label{tab:ama_sample}
+\end{table}
+
+I use the IAmA subreddit's AskMeAnything (AMA) sessions as the source of context and questions.
+I use a combination of PRAW and PMAW python libraries to collect the data.
+I picked the years from 2014 to 2021 to collect the data.
+There were in total $498$ AMA sessions in this time period with more than $1000$ level-0 comments (level-0 comments are the comments directly under the original post and has a high probability of being a question to the original poster).
+The cutoff of $1000$ comments was chosen to ensure that these are the popular AMA sessions.
+Even after that there were some popular AMA request posts that got into the data which were filtered out.
+I picked the sessions from $2015$ to $2021$ to be used as the training and the validation set.
+I picked the sessions from $2014$ to be used as the test set.
+Further selection criteria were applied to the comments to reduce the training data size.
+For each AMA session, I only kept the level-0 comments that had at least $10$ upvotes.
+This helped pick better quality comments.
+After the above selection criteria, I ended up with $22,246$ AMA questions with their context as the original post.
+The test set had $2284$ questions and the training and validation set had $11,123$ questions each.
+Table \ref{tab:ama_sample} shows a sample of the collected data.
+
+\subsection*{Adding Topic}
+% create a new table
+\begin{table}
+\centering
+\scriptsize
+% \begin{tabular}{p{6cm}p{3cm}}
+\begin{tabular}{m{6cm}m{3cm}}
+  \hline
+  Question & Topic \\
+  \hline
+  \hline
+  Hello! Thanks for doing this AMA. Were you ever asked to reprise your role as Wonder Woman for another show, even a cameo? &  Wonder Woman reprisal \\
+  \hline
+Thank you for doing this AMA. I just wanted to know, how did it feel, starring on modern superhero shows like Smallville and Supergirl, as opposed to the Wonder Woman show of the 70's? &  Acting in superhero shows \\
+\hline
+Hi Lynda! Thanks for doing this AMA! How did you like working on Fallout 4? Magnolia was such a great character! &  Fallout 4 and Magnolia \\
+\hline
+Hi, I just want to know one thing. Where did you park your plane? &  Airplane Parking \\
+\hline
+What was your most funny moment behind the scenes of Wonder woman? &  Funny moments behind the scenes \\
+  \hline
+  \hline
+  \end{tabular}
+  \caption{Sample of generated topics using GPT3 API}
+  \label{tab:topic_sample}
+\end{table}
+
+The topic of the question is not explicitly mentioned in the context.
+However, it can be inferred from the question.
+As it would take a lot of time to manually annotate the topic of each question, I use GPT3 API to generate the topic of the question.
+I use the following prompt to generate the topic:
+\textit{Describe the topic of the question below in a single word/phrase. Q: <question> A: ?}
+Table \ref{tab:topic_sample} shows a sample of the generated topics.
+From the sample, we can see that the generated topics are relevant to the question.
+
+
+\subsection*{Padding Context with Wikipedia Summary}
+\begin{table}
+\centering
+\tiny
+\begin{tabular}{p{5cm}p{5cm}}
+  \hline
+  Title & Summary \\
+  \hline
+  \hline
+  Hello, I'm Lorin. I make music called Bassnectar - lately i've been working nonstop to remix my record collection into new versions for an experiment called the Freestyle Sessions in Colorado! What's on your mind? An me askything... & Lorin Gabriel Ashton, better known under his stage name Bassnectar (born February 16, 1978), is an American DJ and record producer. \\
+  \hline
+  I Work at a Costco in Oregon dealing with this corona virus craze, AMA! & Costco Wholesale Corporation (doing business as Costco Wholesale and also known simply as Costco) is an American multinational corporation which operates a chain of membership-only big-box retail stores (warehouse club). As of 2022, Costco is the fifth largest retailer in the world and is the world's largest retailer of choice and prime beef, organic foods, rotisserie chicken, and wine as of 2016. \\
+  \hline
+  I’m a 23 year old woman living with Addison’s Disease, Lupus, Psoriasis and Psoriatic Arthritis. Basically a walking autoimmune disease. Ask me anything! & Addison's disease, also known as primary adrenal insufficiency, is a rare long-term endocrine disorder characterized by inadequate production of the steroid hormones cortisol and aldosterone by the two outer layers of the cells of the adrenal glands (adrenal cortex), causing adrenal insufficiency. Symptoms generally come on slowly and insidiously and may include abdominal pain and gastrointestinal abnormalities, weakness, and weight loss. \\
+  \hline
+  Hey Reddit, it’s Kris, Rob and Dave from Cyanide \& Happiness! Let’s talk about things! & Cyanide \& Happiness (C\&H) is a webcomic created by Rob DenBleyker, Kris Wilson, Dave McElfatrick and Matt Melvin. The comic has been running since 2005 and is published on the website explosm.net along with animated shorts in the same style. Matt Melvin left C\&H in 2014, and several other people have contributed to the comic and to the animated shorts.  \\
+  \hline
+  \hline
+  \end{tabular}
+  \caption{Sample of generated topics using GPT3 API}
+  \label{tab:wiki_sample}
+\end{table}
+The AMA posts contained title and body.
+The title is meant to be a brief Introduction to the questionee/OP.
+However, it proved to be too short in a lot of cases.
+For example, well-known TV/movie actors and actresses just wrote their name in the title which is enough for the readers to know who they are but not enough for the model to learn the context.
+The post body did not contain relevant information in most cases.
+Hence it was necessary to append context of named entities to the original post.
+However, this proved to be challenging to be done automatically.
+The questionees ranged from celebrities to various form of organizations.
+Often times there were multiple entities in the title and adding context of all of them would be too much for the model to learn.
+Therefore, only one entity was picked as the main entity and this task was done manually.
+I also had to make sure that the entity also has a Wikipedia page.
+There were some instances the OP was not a celebrity or a well-known organization and did not have a Wikipedia page.
+In those cases, OP actually provided sufficient details about themselves in the post title.
+For titles with at least one renowned entity, I used the Wikipedia API to get the summary of the entity's Wikipedia page.
+However, the summaries had varied length.
+I picked as many sentences as needed to have a total of $50$ tokens in the summary.
+I appended the summary to the original post title which was then used as the context for the question.
+For the questionees that did not have a Wikipedia page, I used the original post title as the context.
+Table \ref{tab:wiki_sample} shows a sample of the generated summaries.
+From the samples, we can see that the summaries are relevant to the title and the appending is seamless.
+
+
+\subsection*{Additional Pre-processing of Title}
+The titles contained a lot of special characters and emojis.
+They also contained a lot of variations of the text `Ask Me Anything' which needed to be filtered.
+I used various regular expressions to filter out the special characters and emojis along with the variations of `Ask Me Anything'.
+
+
+\subsection*{Qualitative Analysis of Data}
+The above selection criteria and pre-processing steps helped clean the data to a great extent.
+Specifically, I did not notice any post among the selected posts that were not an AMA session.
+However, there were some questions that seemed to be more of a comment than a question and some questions that seemed like a follow-up question.
+I did not remove those questions as they were not a significant portion of the data and the task of identifying them would be challenging and out-of-scope for this project.
+
+Below I have listed some issues with the data that could not be solved within the limited time frame of this project:
+\begin{itemize}
+  \item Some reddit questions were informal and contained a lot of abbreviations and slang. (Not necessarily an issue but could be a challenge for the model to learn)
+  \item Some questions were actually comments or follow-up questions which is not expected from a question generator model without knowledge of the prior conversation.
+  \item The appended context could not be expected to cover all the information about the questionee and as a result, some questions are relevant to the questionee but it is not obvious from the context. The model would need more familiarity with the questionee to be expected to generate such questions which may only be possible with a large LLM model like GPT-3 or GPT-4.
+\end{itemize}
+
+\section{Methodology}
+For the task of question generation, I used one question generator model and one question ranker model. 
+The question generator model's goal is to generate as many well-constructed questions as possible on the given topic to the questionee.
+The question ranker model's goal is to rank the generated questions based on their quality.
+Afterwards, the top ranked question is selected as the final output.
+
+\subsection{Question Generator}
+The following steps were taken to train the question generator model:
+\begin{itemize}
+  \item The T5 seq2seq Transformer was picked as the architecture for the question generator model.
+  \item I picked a pre-trained T5 model from HuggingFace's model hub which was trained on an accumulation of various well-known QA datasets (SQuAD, RACE, CoQA, and MSMARCO).
+  \item The pre-trained model was fine-tuned on the AMA dataset that I prepared above.
+  \item The fine-tuning is implemented as a conditional generation (seq2seq) task that maximizes the log-likelihood of the target sequence given the source sequence.
+  \item The source sequence is a <topic> token followed by the topic of the question followed by a <context> token followed by the context of the questionee. The <topic> and <context> tokens are used to help the model learn the boundaries of the topic and the context and they were added to the original T5 tokenizer's vocabulary.
+  \item The target sequence is the question asked by the reddit user on the given topic to the questionee.
+\end{itemize}
+
+\subsection{Question Ranker}
+The following steps were taken to train the question ranker model:
+\begin{itemize}
+  \item The BERT Transformer was picked as the architecture for the question ranker model.
+  \item The Transformer was fine-tuned on the AMA ranking dataset of positive and negative examples that I mentioned above.
+  \item The fine-tuning is implemented as a binary classification task that maximizes the log-likelihood of the target label given the source sequence.
+  \item The source sequence is the question and the context separated by <sep> token and the target label is 1 if the question is a relevant question to be asked to the questionee and 0 otherwise.
+\end{itemize}
+
+\section{Experiments}
+\subsection*{Decoding Method}
+Selecting the right decoding method is critical to ensure good output quality of the question generator model.
+Beam search and nucleus sampling are two popular decoding methods for Transformer models to generate questions.
+Nucleus sampling is a stochastic decoding method that samples from the smallest possible set of words whose cumulative probability exceeds a threshold $p$.
+Since AMA questions are typically elaborate and long, I used beam search in my experiments.
+The hyperparameters picked for beam search are as follows:
+
+% decrease the space between items
+\begin{itemize}
+  \setlength\itemsep{0.1em}
+  \small
+  \item Number of beams: 20
+  \item Number of beam groups: 10
+  \item Maximum length of the generated question: 50
+  \item Number of question candidates to generate: 5
+  \item Diversity penalty: 0.5 (to encourage diversity among the generated questions)
+\end{itemize}
+
+\subsection*{Evaluation Metrics}
+Qustion Generation task shares similarity with the summarization task and as such, the same evaluation metrics (ROUGE \cite{lin2004rouge}, BLEU \cite{papineni2002bleu}, METEOR \cite{banerjee2005meteor}, etc.) are typically used to evaluate the quality of the generated questions.
+However, \cite{novikova2017we} showed that the standard evaluation metrics are not suitable for evaluating the quality of NLG tasks such as question generation.
+%Therefore, in addition to the standard evaluation metrics, I use the BLEURT \cite{sellam2020bleurt} metric which is state-of-the-art evaluation metric in WMT Metrics shared task.
+Therefore, manual evaluation is necessary to evaluate the quality of the generated questions.
+There was no baselines considered for this project considering the limited time and resources.
+
+
+\subsection*{Hyperparameters}
+The hyperparameters used for the question generator model are as follows:
+
+\begin{table}
+  \tiny
+  \centering
+  \begin{tabular}{lrr}
+    \hline
+    Hyperparameter & Question Generator & Question Ranker \\
+    \hline
+    Batch size & $8$ & $64$ \\
+    Learning rate & $0.0001$ & $0.0001$ \\
+    Number of epochs & $20$ & $20$ \\
+    \hline
+  \end{tabular}
+  \caption{Training Hyperparameters}
+  \label{tab:hyperparams_qg}
+\end{table}
+
+Both model was trained on a single NVIDIA A100 GPU.
+The code was written in a combination of PyToch and HuggingFace's Transformers library.
+Code from the github repository \url{https://github.com/AMontgomerie/question_generator.git} was used as a reference for the implementation of the question generator and the question ranker models.
+The generator model was trained for $20$ epochs and took about $6$ hours to train.
+The ranker model was trained for $20$ epochs and took about $1$ hours to train.
+The trained question generator model is available at \url{https://huggingface.co/ehsanul007/IAmA-question-generator} and the trained question ranker model is available at \url{https://huggingface.co/ehsanul007/IAmA-question-ranker}.
+
+
+\section{Results and Analysis}
+% Familiar Questionee Test Set
+% BLEU-1: 0.1647
+% BLEU-2: 0.0626
+% BLEU-3: 0.0382
+% BLEU-4: 0.0282
+% Average METEOR score is 0.1568
+% Average ROUGE score is 0.1357
+% Unfamiliar Questionee Test Set
+% BLEU-1: 0.1724
+% BLEU-2: 0.0720
+% BLEU-3: 0.0445
+% BLEU-4: 0.0326
+% Average METEOR score is 16.73
+% Average ROUGE score is 14.02
+
+\subsection*{Automatic Evaluation}
+
+\begin{table}
+  \footnotesize
+  \centering
+  \begin{tabular}{lrrrrrr}
+    \hline
+    Test Set & BLEU-1 & BLEU-2 & BLEU-3 & BLEU-4 & METEOR & ROUGE \\
+    \hline
+    Familiar Questionee & $16.47$ & $6.26$ & $3.82$ & $2.82$ & $15.68$ & $13.57$ \\
+    Unfamiliar Questionee & $17.24$ & $7.20$ & $4.45$ & $3.26$ & $16.73$ & $14.02$ \\
+    \hline
+  \end{tabular}
+  \caption{Performance of the question generator model on the familiar and unfamiliar questionee test sets. (The scores are in percentage.)}
+  \label{tab:qg_results}
+\end{table}
+
+Two test sets were considered in automatic evaluation of the question generator model.
+The unfamiliar questionee test set consists of questions asked by reddit users to questionees that were not present in the training set i.e. from the AMA sessions in 2014.
+The familiar questionee test set consists of questions asked by reddit users to questionees that were present in the training set and they were randomly sampled from the validation set.
+The motivation behind using two test sets is to evaluate the generalization ability of the question generator model and whether it is affected by exposure to the questionee context during training.
+
+Table $\ref{tab:qg_results}$ shows the evaluation metrics for the question generator model on the familiar and unfamiliar questionee test sets. 
+The performance of the question generator model is slightly better on the unfamiliar questionee test set than the familiar questionee test set.
+However, the difference is negligible.
+One explanation for this is that the context available to the question generator model is not sufficient to generate inference capability about the questionee which could have helped the model to generate better questions.
+Thus, the model tries to generate similar questions for the same questionee to what it has seen during training even though topics are different.
+However, the above is just a hypothesis and further investigation is required to confirm it.
+Overall, the automatic evaluation results show that the question generator model is not able to generate questions that are similar to the questions asked by reddit users in the AMA sessions.
+
+\subsection*{Qualitative Analysis}
+
+
+
+
+
+\bibliographystyle{plain}
+\bibliography{report}
+%%% End document
 \end{document}

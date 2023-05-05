@@ -1,0 +1,28 @@
+\begin{thebibliography}{1}
+
+\bibitem{banerjee2005meteor}
+Satanjeev Banerjee and Alon Lavie.
+\newblock Meteor: An automatic metric for mt evaluation with improved
+  correlation with human judgments.
+\newblock In {\em Proceedings of the acl workshop on intrinsic and extrinsic
+  evaluation measures for machine translation and/or summarization}, pages
+  65--72, 2005.
+
+\bibitem{lin2004rouge}
+Chin-Yew Lin.
+\newblock Rouge: A package for automatic evaluation of summaries.
+\newblock In {\em Text summarization branches out}, pages 74--81, 2004.
+
+\bibitem{novikova2017we}
+Jekaterina Novikova, Ond{\v{r}}ej Du{\v{s}}ek, Amanda~Cercas Curry, and Verena
+  Rieser.
+\newblock Why we need new evaluation metrics for nlg.
+\newblock {\em arXiv preprint arXiv:1707.06875}, 2017.
+
+\bibitem{papineni2002bleu}
+Kishore Papineni, Salim Roukos, Todd Ward, and Wei-Jing Zhu.
+\newblock Bleu: a method for automatic evaluation of machine translation.
+\newblock In {\em Proceedings of the 40th annual meeting of the Association for
+  Computational Linguistics}, pages 311--318, 2002.
+
+\end{thebibliography}
