@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/MacPorts 2022.62882_0) (preloaded format=pdflatex 2022.7.16)  5 MAY 2023 09:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/MacPorts 2022.62882_0) (preloaded format=pdflatex 2022.7.16)  5 MAY 2023 20:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -437,7 +437,14 @@ Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footer
 \f@nch@O@erf=\skip82
 \f@nch@O@olf=\skip83
 \f@nch@O@orf=\skip84
-) (./report.aux)
+) (./report.aux
+
+LaTeX Warning: Label `tab:qg_examples' multiply defined.
+
+
+LaTeX Warning: Label `tab:qg_examples' multiply defined.
+
+)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
@@ -556,168 +563,32 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 87.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/opt/local/share/texmf-texlive/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
+) [1
+
+
+{/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.25598pt on input line 103.
+(Font)              scaled to size 10.07397pt on input line 98.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 103.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.25598pt on input line 103.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 103.
-
-Underfull \hbox (badness 3803) in paragraph at lines 107--107
-\T1/futs/m/n/8 (+20) ator of Char-lie the
- []
-
-
-Underfull \hbox (badness 5064) in paragraph at lines 107--107
-[]|\T1/futs/m/n/8 (+20) I'm a re-tired \T1/futs/b/n/8 (+20) bank
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 107--107
-[]|\T1/futs/m/n/8 (+20) I'm \T1/futs/b/n/8 (+20) Lynda Carter\T1/futs/m/n/8 (+20) ,
- []
-
-
-Underfull \hbox (badness 2478) in paragraph at lines 107--107
-\T1/futs/m/n/8 (+20) Won-der Woman ac-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 107--108
-[]|\T1/futs/m/n/8 (+20) Sup mutha-fuckas!
- []
-
-
-Underfull \hbox (badness 7576) in paragraph at lines 107--108
-\T1/futs/b/n/8 (+20) Ron Perl-man \T1/futs/m/n/8 (+20) here.
- []
-
-
-Underfull \hbox (badness 1389) in paragraph at lines 110--110
-\T1/futs/m/n/8 (+20) ing this AMA. Were
- []
-
-
-Underfull \hbox (badness 7851) in paragraph at lines 110--110
-\T1/futs/m/n/8 (+20) you ever asked to
- []
-
-
-Underfull \hbox (badness 1163) in paragraph at lines 110--110
-\T1/futs/m/n/8 (+20) reprise your role as
- []
-
-
-Underfull \hbox (badness 2042) in paragraph at lines 110--110
-\T1/futs/m/n/8 (+20) Won-der Woman for
- []
-
-
-Underfull \hbox (badness 4156) in paragraph at lines 110--111
-\T1/futs/m/n/8 (+20) ever bring up how
- []
-
-
-Underfull \hbox (badness 1997) in paragraph at lines 112--112
-\T1/futs/m/n/8 (+20) your in-spi-ra-tion for
- []
-
-
-Underfull \hbox (badness 2626) in paragraph at lines 112--112
-\T1/futs/m/n/8 (+20) were in your pants
- []
-
-
-Underfull \hbox (badness 6284) in paragraph at lines 112--112
-[]|\T1/futs/m/n/8 (+20) Thank you for do-
- []
-
-
-Underfull \hbox (badness 2662) in paragraph at lines 112--112
-\T1/futs/m/n/8 (+20) did it feel, star-ring
- []
-
-
-Underfull \hbox (badness 2689) in paragraph at lines 112--113
-\T1/futs/m/n/8 (+20) been re-leased, how
- []
-
+(Font)              scaled to size 7.63599pt on input line 98.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 125.
+(Font)              scaled to size 5.51999pt on input line 98.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 98.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 98.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 98.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 125.
+(Font)              scaled to size 8.27998pt on input line 98.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 98.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 125.
+(Font)              scaled to size 8.27998pt on input line 98.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 125.
-[1
-
-
-{/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-
-Class scrartcl Warning: Incompatible usage of \@ssect detected.
-(scrartcl)              You've used the KOMA-Script implementation of \@ssect
-(scrartcl)              from within a non compatible caller, that does not
-(scrartcl)              \scr@s@ct@@nn@m@ locally.
-(scrartcl)              This could result in several error messages on input line 137.
-
-
-Class scrartcl Warning: Incompatible usage of \@ssect detected.
-(scrartcl)              You've used the KOMA-Script implementation of \@ssect
-(scrartcl)              from within a non compatible caller, that does not
-(scrartcl)              \scr@s@ct@@nn@m@ locally.
-(scrartcl)              This could result in several error messages on input line 173.
-
-[3]
-
-Class scrartcl Warning: Incompatible usage of \@ssect detected.
-(scrartcl)              You've used the KOMA-Script implementation of \@ssect
-(scrartcl)              from within a non compatible caller, that does not
-(scrartcl)              \scr@s@ct@@nn@m@ locally.
-(scrartcl)              This could result in several error messages on input line 217.
-
-
-Class scrartcl Warning: Incompatible usage of \@ssect detected.
-(scrartcl)              You've used the KOMA-Script implementation of \@ssect
-(scrartcl)              from within a non compatible caller, that does not
-(scrartcl)              \scr@s@ct@@nn@m@ locally.
-(scrartcl)              This could result in several error messages on input line 223.
-
-LaTeX Font Info:    Trying to load font information for TS1+futs on input line 231.
-(/opt/local/share/texmf-texlive/tex/latex/fourier/ts1futs.fd
-File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `futs' (encoding: TS1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
- [4] [5]
-
-Class scrartcl Warning: Incompatible usage of \@ssect detected.
-(scrartcl)              You've used the KOMA-Script implementation of \@ssect
-(scrartcl)              from within a non compatible caller, that does not
-(scrartcl)              \scr@s@ct@@nn@m@ locally.
-(scrartcl)              This could result in several error messages on input line 263.
-
-
-Class scrartcl Warning: Incompatible usage of \@ssect detected.
-(scrartcl)              You've used the KOMA-Script implementation of \@ssect
-(scrartcl)              from within a non compatible caller, that does not
-(scrartcl)              \scr@s@ct@@nn@m@ locally.
-(scrartcl)              This could result in several error messages on input line 281.
-
-
-Class scrartcl Warning: Incompatible usage of \@ssect detected.
-(scrartcl)              You've used the KOMA-Script implementation of \@ssect
-(scrartcl)              from within a non compatible caller, that does not
-(scrartcl)              \scr@s@ct@@nn@m@ locally.
-(scrartcl)              This could result in several error messages on input line 289.
-
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 310.
-(/opt/local/share/texmf-texlive/tex/latex/base/t1cmtt.fd
+(Font)              scaled to size 6.99199pt on input line 98.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 98.
+ (/opt/local/share/texmf-texlive/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -725,9 +596,139 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (85.7543pt too wide) in paragraph at lines 308--314
-\T1/futs/m/n/10.95 (-20) trained ques-tion ranker model is avail-able at $\T1/cmtt/m/n/10.95 https : / / huggingface . co / ehsanul007 / IAmA-[]question-[]ranker$\T1/futs/m/n/10.95 (-20) . 
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+  [][]\T1/futs/m/n/9 (+20) Question Gen-er-a-tion Dataset: $\T1/cmtt/m/n/9 https : / / huggingface . co / datasets / ehsanul007 /
  []
+
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.25598pt on input line 106.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.25598pt on input line 106.
+
+Underfull \hbox (badness 3803) in paragraph at lines 110--110
+\T1/futs/m/n/8 (+20) ator of Char-lie the
+ []
+
+
+Underfull \hbox (badness 5064) in paragraph at lines 110--110
+[]|\T1/futs/m/n/8 (+20) I'm a re-tired \T1/futs/b/n/8 (+20) bank
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
+[]|\T1/futs/m/n/8 (+20) I'm \T1/futs/b/n/8 (+20) Lynda Carter\T1/futs/m/n/8 (+20) ,
+ []
+
+
+Underfull \hbox (badness 2478) in paragraph at lines 110--110
+\T1/futs/m/n/8 (+20) Won-der Woman ac-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
+[]|\T1/futs/m/n/8 (+20) Sup mutha-fuckas!
+ []
+
+
+Underfull \hbox (badness 7576) in paragraph at lines 110--111
+\T1/futs/b/n/8 (+20) Ron Perl-man \T1/futs/m/n/8 (+20) here.
+ []
+
+
+Underfull \hbox (badness 1389) in paragraph at lines 113--113
+\T1/futs/m/n/8 (+20) ing this AMA. Were
+ []
+
+
+Underfull \hbox (badness 7851) in paragraph at lines 113--113
+\T1/futs/m/n/8 (+20) you ever asked to
+ []
+
+
+Underfull \hbox (badness 1163) in paragraph at lines 113--113
+\T1/futs/m/n/8 (+20) reprise your role as
+ []
+
+
+Underfull \hbox (badness 2042) in paragraph at lines 113--113
+\T1/futs/m/n/8 (+20) Won-der Woman for
+ []
+
+
+Underfull \hbox (badness 4156) in paragraph at lines 113--114
+\T1/futs/m/n/8 (+20) ever bring up how
+ []
+
+
+Underfull \hbox (badness 1997) in paragraph at lines 115--115
+\T1/futs/m/n/8 (+20) your in-spi-ra-tion for
+ []
+
+
+Underfull \hbox (badness 2626) in paragraph at lines 115--115
+\T1/futs/m/n/8 (+20) were in your pants
+ []
+
+
+Underfull \hbox (badness 6284) in paragraph at lines 115--115
+[]|\T1/futs/m/n/8 (+20) Thank you for do-
+ []
+
+
+Underfull \hbox (badness 2662) in paragraph at lines 115--115
+\T1/futs/m/n/8 (+20) did it feel, star-ring
+ []
+
+
+Underfull \hbox (badness 2689) in paragraph at lines 115--116
+\T1/futs/m/n/8 (+20) been re-leased, how
+ []
+
+
+Class scrartcl Warning: Incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input line 134.
+
+[2] [3]
+
+Class scrartcl Warning: Incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input line 166.
+
+[4]
+
+Class scrartcl Warning: Incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input line 197.
+
+
+Class scrartcl Warning: Incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input line 203.
+
+LaTeX Font Info:    Trying to load font information for TS1+futs on input line 211.
+(/opt/local/share/texmf-texlive/tex/latex/fourier/ts1futs.fd
+File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `futs' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [5]
+
+Class scrartcl Warning: Incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input line 217.
 
 [6]
 
@@ -735,25 +736,204 @@ Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              You've used the KOMA-Script implementation of \@ssect
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
-(scrartcl)              This could result in several error messages on input line 332.
+(scrartcl)              This could result in several error messages on input line 270.
 
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 337.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 337.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 337.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 337.
+
+Class scrartcl Warning: Incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input line 288.
+
 [7]
 
 Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              You've used the KOMA-Script implementation of \@ssect
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
-(scrartcl)              This could result in several error messages on input line 362.
+(scrartcl)              This could result in several error messages on input line 296.
 
-(./report.bbl
+
+Class scrartcl Warning: Incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input line 325.
+
+[8]
+
+Class scrartcl Warning: Incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input line 355.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--361
+[]|\T1/futs/b/n/10 (+20) Semantic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--361
+\T1/futs/b/n/10 (+20) Sim-i-lar-ity
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--361
+\T1/futs/b/n/10 (+20) with Ac-tual
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--361
+[]|\T1/futs/b/n/10 (+20) Degree of
+ []
+
+
+Class scrartcl Warning: Incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input line 386.
+
+
+Underfull \hbox (badness 3536) in paragraph at lines 395--395
+[]|\T1/futs/m/n/6 (+20) I am a Video and Au-dio
+ []
+
+
+Underfull \hbox (badness 7308) in paragraph at lines 395--395
+\T1/futs/m/n/6 (+20) Foren-sic Ex-pert who has
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 395--395
+\T1/futs/m/n/6 (+20) con-sulted on cases like
+ []
+
+
+Underfull \hbox (badness 6477) in paragraph at lines 395--395
+\T1/futs/m/n/6 (+20) Trayvon Mar-tin, Malaysia
+ []
+
+
+Underfull \hbox (badness 2027) in paragraph at lines 395--395
+[]|\T1/futs/m/n/6 (+20) In your 34 years of work,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 395--395
+\T1/futs/m/n/6 (+20) what it the weird-est or
+ []
+
+
+Underfull \hbox (badness 2512) in paragraph at lines 397--397
+[]|\T1/futs/m/n/6 (+20) We are the staff of Gi-ant
+ []
+
+
+Underfull \hbox (badness 2088) in paragraph at lines 397--397
+\T1/futs/m/n/6 (+20) Bomb, a site about video
+ []
+
+
+Underfull \hbox (badness 7486) in paragraph at lines 397--397
+\T1/futs/m/n/6 (+20) games, and our decades
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 397--397
+\T1/futs/m/n/6 (+20) of video game cov-er-age
+ []
+
+
+Underfull \hbox (badness 7221) in paragraph at lines 397--397
+\T1/futs/m/it/6 (+20) an Amer-i-can video game
+ []
+
+
+Underfull \hbox (badness 3088) in paragraph at lines 397--397
+\T1/futs/m/it/6 (+20) web-site and wiki that in-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 397--397
+\T1/futs/m/it/6 (+20) cludes personality-driven
+ []
+
+
+Underfull \hbox (badness 4279) in paragraph at lines 397--397
+\T1/futs/b/it/6 (+20) Jeff \T1/futs/m/it/6 (+20) Ger-st-mann and Ryan
+ []
+
+
+Underfull \hbox (badness 3668) in paragraph at lines 397--397
+[]|\T1/futs/m/n/6 (+20) With how busy you guys
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 399--399
+[]|\T1/futs/m/n/6 (+20) We are Jeremy & Bar-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 399--399
+\T1/futs/m/n/6 (+20) rett of Cin-e-maSins, Mu-
+ []
+
+
+Underfull \hbox (badness 1024) in paragraph at lines 399--399
+\T1/futs/m/n/6 (+20) Sin-Cast, will you con-tinue
+ []
+
+
+Underfull \hbox (badness 2556) in paragraph at lines 399--399
+\T1/futs/m/n/6 (+20) to vote on your favourite
+ []
+
+
+Underfull \hbox (badness 2608) in paragraph at lines 399--399
+\T1/futs/m/n/6 (+20) other top-ics do you have
+ []
+
+
+Underfull \hbox (badness 1728) in paragraph at lines 399--400
+\T1/futs/m/n/6 (+20) movies that you have dis-
+ []
+
+
+Underfull \hbox (badness 2277) in paragraph at lines 399--400
+\T1/futs/m/n/6 (+20) most fun times watch-ing?
+ []
+
+
+Underfull \hbox (badness 2189) in paragraph at lines 399--400
+\T1/futs/m/n/6 (+20) Also, which movies/shows
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 401--401
+[]|\T1/futs/m/n/6 (+20) Unconventional view-ing
+ []
+
+
+Underfull \hbox (badness 1048) in paragraph at lines 401--402
+[]|\T1/futs/m/n/6 (+20) What is the \T1/futs/b/n/6 (+20) cra-zi-est \T1/futs/m/n/6 (+20) thing
+ []
+
+
+Underfull \hbox (badness 6125) in paragraph at lines 403--403
+[]|\T1/futs/m/n/6 (+20) Who wins the best shirt
+ []
+
+[9] [10]
+
+Class scrartcl Warning: Incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input line 424.
+
+[11] (./report.bbl
 
 Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              You've used the KOMA-Script implementation of \@ssect
@@ -761,20 +941,24 @@ Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input line 1.
 
-) [8] (./report.aux) ) 
+[12]) [13] (./report.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 10480 strings out of 479382
- 192200 string characters out of 5869398
- 642009 words of memory out of 5000000
- 27868 multiletter control sequences out of 15000+600000
- 616710 words of font info for 450 fonts, out of 8000000 for 9000
+ 10683 strings out of 479382
+ 194763 string characters out of 5869398
+ 644009 words of memory out of 5000000
+ 27898 multiletter control sequences out of 15000+600000
+ 646214 words of font info for 573 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 108i,11n,106p,10655b,309s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/opt/local/share/texmf-texlive/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/opt/local/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</opt/local/share/texmf-texlive/fonts/type1/adobe/utopia/putb8a.pfb></opt/local/share/texmf-texlive/fonts/type1/adobe/utopia/putr8a.pfb></opt/local/share/texmf-texlive/fonts/type1/adobe/utopia/putri8a.pfb></opt/local/share/texmf-texlive/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on report.pdf (8 pages, 108451 bytes).
+ 108i,12n,106p,10655b,348s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/opt/local/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}{/opt/local/share/texmf-texlive/fonts/enc/dvips/cm-super/cm-super-t1.enc}</opt/local/share/texmf-texlive/fonts/type1/adobe/utopia/putb8a.pfb></opt/local/share/texmf-texlive/fonts/type1/adobe/utopia/putbi8a.pfb></opt/local/share/texmf-texlive/fonts/type1/adobe/utopia/putr8a.pfb></opt/local/share/texmf-texlive/fonts/type1/adobe/utopia/putri8a.pfb></opt/local/share/texmf-texlive/fonts/type1/public/cm-super/sftt0900.pfb></opt/local/share/texmf-texlive/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on report.pdf (13 pages, 165458 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 79 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 109569 words of extra memory for PDF output out of 128383 (max. 10000000)
+ 142849 words of extra memory for PDF output out of 154059 (max. 10000000)
 

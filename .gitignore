@@ -1,1 +1,6 @@
 enwiki-latest-all-titles-in-ns0.gz
+
+# every report.* files
+report.*
+
+.DS_Store

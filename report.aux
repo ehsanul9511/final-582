@@ -4,31 +4,52 @@
 \@nameuse{bbl@beforestart}
 \babel@aux{english}{}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {2}Data Collection and Preprocessing}{1}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Sample of AMA context and questions}}{2}{}\protected@file@percent }
-\newlabel{tab:ama_sample}{{2.1}{2}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Data Collection and Preprocessing}{2}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Sample of AMA post and questions}}{3}{}\protected@file@percent }
+\newlabel{tab:ama_sample}{{2.1}{3}}
 \@writefile{lot}{\contentsline {table}{\numberline {2.2}{\ignorespaces Sample of generated topics using GPT3 API}}{3}{}\protected@file@percent }
 \newlabel{tab:topic_sample}{{2.2}{3}}
-\@writefile{lot}{\contentsline {table}{\numberline {2.3}{\ignorespaces Sample of generated topics using GPT3 API}}{4}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2.3}{\ignorespaces Sample of appended context from Wikipedia}}{4}{}\protected@file@percent }
 \newlabel{tab:wiki_sample}{{2.3}{4}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Methodology}{5}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Question Generator}{5}{}\protected@file@percent }
+\citation{raffel2020exploring}
+\citation{rajpurkar2016squad}
+\citation{lai2017race}
+\citation{reddy2019coqa}
+\citation{nguyen2016ms}
+\@writefile{lot}{\contentsline {table}{\numberline {2.4}{\ignorespaces Word count statistics of the data}}{6}{}\protected@file@percent }
+\newlabel{tab:data_stats}{{2.4}{6}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Methodology}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Question Generator}{6}{}\protected@file@percent }
 \citation{lin2004rouge}
 \citation{papineni2002bleu}
 \citation{banerjee2005meteor}
 \citation{novikova2017we}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Question Ranker}{6}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4}Experiments}{6}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Training Hyperparameters}}{7}{}\protected@file@percent }
-\newlabel{tab:hyperparams_qg}{{4.1}{7}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Performance of the question generator model on the familiar and unfamiliar questionee test sets. (The scores are in percentage.)}}{7}{}\protected@file@percent }
-\newlabel{tab:qg_results}{{5.1}{7}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Results and Analysis}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Question Ranker}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Experiments}{7}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Training Hyperparameters}}{8}{}\protected@file@percent }
+\newlabel{tab:hyperparams_qg}{{4.1}{8}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Performance of the question generator model on the familiar and unfamiliar questionee test sets. (The scores are in percentage. BLEU-1, BLEU-2, BLEU-3, BLEU-4 refer to BLEU scores for n-grams of length 1, 2, 3, 4 respectively.)}}{8}{}\protected@file@percent }
+\newlabel{tab:qg_results}{{5.1}{8}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Results and Analysis}{8}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces Human evaluation results for the generated questions. (The scores are out of 3)}}{9}{}\protected@file@percent }
+\newlabel{tab:human_eval}{{5.2}{9}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.3}{\ignorespaces Examples of generated questions by the question generator model. Appended context is omitted for brevity unless it is necessary to understand the question.}}{10}{}\protected@file@percent }
+\newlabel{tab:qg_examples}{{5.3}{10}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.4}{\ignorespaces Examples of generated questions with the topic "Size Comparison" but to different questionees.}}{11}{}\protected@file@percent }
+\newlabel{tab:qg_examples}{{5.4}{11}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.5}{\ignorespaces Examples of generated questions with the topic "Time Management" but to different questionees.}}{11}{}\protected@file@percent }
+\newlabel{tab:qg_examples}{{5.5}{11}}
 \bibstyle{plain}
 \bibdata{report}
 \bibcite{banerjee2005meteor}{{1}{}{{}}{{}}}
-\bibcite{lin2004rouge}{{2}{}{{}}{{}}}
-\bibcite{novikova2017we}{{3}{}{{}}{{}}}
-\bibcite{papineni2002bleu}{{4}{}{{}}{{}}}
+\bibcite{lai2017race}{{2}{}{{}}{{}}}
+\bibcite{lin2004rouge}{{3}{}{{}}{{}}}
+\bibcite{nguyen2016ms}{{4}{}{{}}{{}}}
+\bibcite{novikova2017we}{{5}{}{{}}{{}}}
+\bibcite{papineni2002bleu}{{6}{}{{}}{{}}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Lessons Learned}{12}{}\protected@file@percent }
+\bibcite{raffel2020exploring}{{7}{}{{}}{{}}}
+\bibcite{rajpurkar2016squad}{{8}{}{{}}{{}}}
+\bibcite{reddy2019coqa}{{9}{}{{}}{{}}}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
-\gdef \@abspage@last{8}
+\gdef \@abspage@last{13}

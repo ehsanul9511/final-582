@@ -8,10 +8,21 @@ Satanjeev Banerjee and Alon Lavie.
   evaluation measures for machine translation and/or summarization}, pages
   65--72, 2005.
 
+\bibitem{lai2017race}
+Guokun Lai, Qizhe Xie, Hanxiao Liu, Yiming Yang, and Eduard Hovy.
+\newblock Race: Large-scale reading comprehension dataset from examinations.
+\newblock {\em arXiv preprint arXiv:1704.04683}, 2017.
+
 \bibitem{lin2004rouge}
 Chin-Yew Lin.
 \newblock Rouge: A package for automatic evaluation of summaries.
 \newblock In {\em Text summarization branches out}, pages 74--81, 2004.
+
+\bibitem{nguyen2016ms}
+Tri Nguyen, Mir Rosenberg, Xia Song, Jianfeng Gao, Saurabh Tiwary, Rangan
+  Majumder, and Li~Deng.
+\newblock Ms marco: A human generated machine reading comprehension dataset.
+\newblock {\em choice}, 2640:660, 2016.
 
 \bibitem{novikova2017we}
 Jekaterina Novikova, Ond{\v{r}}ej Du{\v{s}}ek, Amanda~Cercas Curry, and Verena
@@ -24,5 +35,24 @@ Kishore Papineni, Salim Roukos, Todd Ward, and Wei-Jing Zhu.
 \newblock Bleu: a method for automatic evaluation of machine translation.
 \newblock In {\em Proceedings of the 40th annual meeting of the Association for
   Computational Linguistics}, pages 311--318, 2002.
+
+\bibitem{raffel2020exploring}
+Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael
+  Matena, Yanqi Zhou, Wei Li, and Peter~J Liu.
+\newblock Exploring the limits of transfer learning with a unified text-to-text
+  transformer.
+\newblock {\em The Journal of Machine Learning Research}, 21(1):5485--5551,
+  2020.
+
+\bibitem{rajpurkar2016squad}
+Pranav Rajpurkar, Jian Zhang, Konstantin Lopyrev, and Percy Liang.
+\newblock Squad: 100,000+ questions for machine comprehension of text.
+\newblock {\em arXiv preprint arXiv:1606.05250}, 2016.
+
+\bibitem{reddy2019coqa}
+Siva Reddy, Danqi Chen, and Christopher~D Manning.
+\newblock Coqa: A conversational question answering challenge.
+\newblock {\em Transactions of the Association for Computational Linguistics},
+  7:249--266, 2019.
 
 \end{thebibliography}
