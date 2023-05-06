@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{banerjee2005meteor}
 Satanjeev Banerjee and Alon Lavie.
@@ -7,6 +7,12 @@ Satanjeev Banerjee and Alon Lavie.
 \newblock In {\em Proceedings of the acl workshop on intrinsic and extrinsic
   evaluation measures for machine translation and/or summarization}, pages
   65--72, 2005.
+
+\bibitem{devlin2018bert}
+Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova.
+\newblock Bert: Pre-training of deep bidirectional transformers for language
+  understanding.
+\newblock {\em arXiv preprint arXiv:1810.04805}, 2018.
 
 \bibitem{lai2017race}
 Guokun Lai, Qizhe Xie, Hanxiao Liu, Yiming Yang, and Eduard Hovy.

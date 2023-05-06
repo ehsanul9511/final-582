@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/MacPorts 2022.62882_0) (preloaded format=pdflatex 2022.7.16)  5 MAY 2023 20:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/MacPorts 2022.62882_0) (preloaded format=pdflatex 2022.7.16)  5 MAY 2023 22:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -730,20 +730,18 @@ Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input line 217.
 
-[6]
+<t5.png, id=22, 602.25pt x 346.29375pt>
+File: t5.png Graphic file (type png)
+<use t5.png>
+Package pdftex.def Info: t5.png  used on input line 248.
+(pdftex.def)             Requested size: 250.95587pt x 144.30103pt.
+[6 <./t5.png>]
 
 Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              You've used the KOMA-Script implementation of \@ssect
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
-(scrartcl)              This could result in several error messages on input line 270.
-
-
-Class scrartcl Warning: Incompatible usage of \@ssect detected.
-(scrartcl)              You've used the KOMA-Script implementation of \@ssect
-(scrartcl)              from within a non compatible caller, that does not
-(scrartcl)              \scr@s@ct@@nn@m@ locally.
-(scrartcl)              This could result in several error messages on input line 288.
+(scrartcl)              This could result in several error messages on input line 280.
 
 [7]
 
@@ -751,14 +749,21 @@ Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              You've used the KOMA-Script implementation of \@ssect
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
-(scrartcl)              This could result in several error messages on input line 296.
+(scrartcl)              This could result in several error messages on input line 298.
 
 
 Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              You've used the KOMA-Script implementation of \@ssect
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
-(scrartcl)              This could result in several error messages on input line 325.
+(scrartcl)              This could result in several error messages on input line 306.
+
+
+Class scrartcl Warning: Incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input line 335.
 
 [8]
 
@@ -766,172 +771,173 @@ Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              You've used the KOMA-Script implementation of \@ssect
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
-(scrartcl)              This could result in several error messages on input line 355.
+(scrartcl)              This could result in several error messages on input line 365.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 361--361
+Underfull \hbox (badness 10000) in paragraph at lines 371--371
 []|\T1/futs/b/n/10 (+20) Semantic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 361--361
+Underfull \hbox (badness 10000) in paragraph at lines 371--371
 \T1/futs/b/n/10 (+20) Sim-i-lar-ity
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 361--361
+Underfull \hbox (badness 10000) in paragraph at lines 371--371
 \T1/futs/b/n/10 (+20) with Ac-tual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 361--361
+Underfull \hbox (badness 10000) in paragraph at lines 371--371
 []|\T1/futs/b/n/10 (+20) Degree of
  []
 
+[9]
 
 Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              You've used the KOMA-Script implementation of \@ssect
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
-(scrartcl)              This could result in several error messages on input line 386.
+(scrartcl)              This could result in several error messages on input line 396.
 
 
-Underfull \hbox (badness 3536) in paragraph at lines 395--395
+Underfull \hbox (badness 3536) in paragraph at lines 405--405
 []|\T1/futs/m/n/6 (+20) I am a Video and Au-dio
  []
 
 
-Underfull \hbox (badness 7308) in paragraph at lines 395--395
+Underfull \hbox (badness 7308) in paragraph at lines 405--405
 \T1/futs/m/n/6 (+20) Foren-sic Ex-pert who has
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 395--395
+Underfull \hbox (badness 10000) in paragraph at lines 405--405
 \T1/futs/m/n/6 (+20) con-sulted on cases like
  []
 
 
-Underfull \hbox (badness 6477) in paragraph at lines 395--395
+Underfull \hbox (badness 6477) in paragraph at lines 405--405
 \T1/futs/m/n/6 (+20) Trayvon Mar-tin, Malaysia
  []
 
 
-Underfull \hbox (badness 2027) in paragraph at lines 395--395
+Underfull \hbox (badness 2027) in paragraph at lines 405--405
 []|\T1/futs/m/n/6 (+20) In your 34 years of work,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 395--395
+Underfull \hbox (badness 10000) in paragraph at lines 405--405
 \T1/futs/m/n/6 (+20) what it the weird-est or
  []
 
 
-Underfull \hbox (badness 2512) in paragraph at lines 397--397
+Underfull \hbox (badness 2512) in paragraph at lines 407--407
 []|\T1/futs/m/n/6 (+20) We are the staff of Gi-ant
  []
 
 
-Underfull \hbox (badness 2088) in paragraph at lines 397--397
+Underfull \hbox (badness 2088) in paragraph at lines 407--407
 \T1/futs/m/n/6 (+20) Bomb, a site about video
  []
 
 
-Underfull \hbox (badness 7486) in paragraph at lines 397--397
+Underfull \hbox (badness 7486) in paragraph at lines 407--407
 \T1/futs/m/n/6 (+20) games, and our decades
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 397--397
+Underfull \hbox (badness 10000) in paragraph at lines 407--407
 \T1/futs/m/n/6 (+20) of video game cov-er-age
  []
 
 
-Underfull \hbox (badness 7221) in paragraph at lines 397--397
+Underfull \hbox (badness 7221) in paragraph at lines 407--407
 \T1/futs/m/it/6 (+20) an Amer-i-can video game
  []
 
 
-Underfull \hbox (badness 3088) in paragraph at lines 397--397
+Underfull \hbox (badness 3088) in paragraph at lines 407--407
 \T1/futs/m/it/6 (+20) web-site and wiki that in-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 397--397
+Underfull \hbox (badness 10000) in paragraph at lines 407--407
 \T1/futs/m/it/6 (+20) cludes personality-driven
  []
 
 
-Underfull \hbox (badness 4279) in paragraph at lines 397--397
+Underfull \hbox (badness 4279) in paragraph at lines 407--407
 \T1/futs/b/it/6 (+20) Jeff \T1/futs/m/it/6 (+20) Ger-st-mann and Ryan
  []
 
 
-Underfull \hbox (badness 3668) in paragraph at lines 397--397
+Underfull \hbox (badness 3668) in paragraph at lines 407--407
 []|\T1/futs/m/n/6 (+20) With how busy you guys
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 399--399
+Underfull \hbox (badness 10000) in paragraph at lines 409--409
 []|\T1/futs/m/n/6 (+20) We are Jeremy & Bar-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 399--399
+Underfull \hbox (badness 10000) in paragraph at lines 409--409
 \T1/futs/m/n/6 (+20) rett of Cin-e-maSins, Mu-
  []
 
 
-Underfull \hbox (badness 1024) in paragraph at lines 399--399
+Underfull \hbox (badness 1024) in paragraph at lines 409--409
 \T1/futs/m/n/6 (+20) Sin-Cast, will you con-tinue
  []
 
 
-Underfull \hbox (badness 2556) in paragraph at lines 399--399
+Underfull \hbox (badness 2556) in paragraph at lines 409--409
 \T1/futs/m/n/6 (+20) to vote on your favourite
  []
 
 
-Underfull \hbox (badness 2608) in paragraph at lines 399--399
+Underfull \hbox (badness 2608) in paragraph at lines 409--409
 \T1/futs/m/n/6 (+20) other top-ics do you have
  []
 
 
-Underfull \hbox (badness 1728) in paragraph at lines 399--400
+Underfull \hbox (badness 1728) in paragraph at lines 409--410
 \T1/futs/m/n/6 (+20) movies that you have dis-
  []
 
 
-Underfull \hbox (badness 2277) in paragraph at lines 399--400
+Underfull \hbox (badness 2277) in paragraph at lines 409--410
 \T1/futs/m/n/6 (+20) most fun times watch-ing?
  []
 
 
-Underfull \hbox (badness 2189) in paragraph at lines 399--400
+Underfull \hbox (badness 2189) in paragraph at lines 409--410
 \T1/futs/m/n/6 (+20) Also, which movies/shows
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--401
+Underfull \hbox (badness 10000) in paragraph at lines 411--411
 []|\T1/futs/m/n/6 (+20) Unconventional view-ing
  []
 
 
-Underfull \hbox (badness 1048) in paragraph at lines 401--402
+Underfull \hbox (badness 1048) in paragraph at lines 411--412
 []|\T1/futs/m/n/6 (+20) What is the \T1/futs/b/n/6 (+20) cra-zi-est \T1/futs/m/n/6 (+20) thing
  []
 
 
-Underfull \hbox (badness 6125) in paragraph at lines 403--403
+Underfull \hbox (badness 6125) in paragraph at lines 413--413
 []|\T1/futs/m/n/6 (+20) Who wins the best shirt
  []
 
-[9] [10]
+[10]
 
 Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              You've used the KOMA-Script implementation of \@ssect
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
-(scrartcl)              This could result in several error messages on input line 424.
+(scrartcl)              This could result in several error messages on input line 434.
 
 [11] (./report.bbl
 
@@ -947,18 +953,18 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 10683 strings out of 479382
- 194763 string characters out of 5869398
- 644009 words of memory out of 5000000
- 27898 multiletter control sequences out of 15000+600000
- 646214 words of font info for 573 fonts, out of 8000000 for 9000
+ 10703 strings out of 479382
+ 195022 string characters out of 5869398
+ 645009 words of memory out of 5000000
+ 27908 multiletter control sequences out of 15000+600000
+ 647006 words of font info for 579 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 108i,12n,106p,10655b,348s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,11n,106p,10655b,346s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/opt/local/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}{/opt/local/share/texmf-texlive/fonts/enc/dvips/cm-super/cm-super-t1.enc}</opt/local/share/texmf-texlive/fonts/type1/adobe/utopia/putb8a.pfb></opt/local/share/texmf-texlive/fonts/type1/adobe/utopia/putbi8a.pfb></opt/local/share/texmf-texlive/fonts/type1/adobe/utopia/putr8a.pfb></opt/local/share/texmf-texlive/fonts/type1/adobe/utopia/putri8a.pfb></opt/local/share/texmf-texlive/fonts/type1/public/cm-super/sftt0900.pfb></opt/local/share/texmf-texlive/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on report.pdf (13 pages, 165458 bytes).
+Output written on report.pdf (13 pages, 186671 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 51 compressed objects within 1 object stream
+ 82 PDF objects out of 1000 (max. 8388607)
+ 52 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 142849 words of extra memory for PDF output out of 154059 (max. 10000000)
+ 142854 words of extra memory for PDF output out of 154059 (max. 10000000)
 

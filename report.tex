@@ -215,7 +215,7 @@ Below I have listed some issues with the data that could not be solved within th
 \end{itemize}
 
 \subsection*{Quantitative Analysis of Data}
-\begin{table}
+\begin{table}[h]
   \small
   \centering
   \begin{tabular}{lrrrr}
@@ -241,6 +241,16 @@ I have listed some statistics about the data below:
 \end{itemize}
 
 \section{Methodology}
+
+% force figure to be placed at the top of the page and start after the previous text
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=0.6\textwidth]{t5.png}
+  \caption{Question Generator Architecture}
+  \label{fig:question_generator}
+\end{figure*}
+
+
 For the task of question generation, I used one question generator model and one question ranker model. 
 The question generator model's goal is to generate as many well-constructed questions as possible on the given topic to the questionee.
 The question ranker model's goal is to rank the generated questions based on their quality.
@@ -260,7 +270,7 @@ The following steps were taken to train the question generator model:
 \subsection{Question Ranker}
 The following steps were taken to train the question ranker model:
 \begin{itemize}
-  \item The BERT Transformer was picked as the architecture for the question ranker model.
+  \item The BERT Transformer \cite{devlin2018bert} was picked as the architecture for the question ranker model.
   \item The Transformer was fine-tuned on the AMA ranking dataset of positive and negative examples that I mentioned above.
   \item The fine-tuning is implemented as a binary classification task that maximizes the log-likelihood of the target label given the source sequence.
   \item The source sequence is the question and the context separated by <sep> token and the target label is 1 if the question is a relevant question to be asked to the questionee and 0 otherwise.
